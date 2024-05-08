@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Fiscal</title>
+    <link rel="stylesheet" type="text/css" href="pagamento.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nota Fiscal</h1>
+    </header>
+
+    <div class="product">
+        <h2>Produtos</h2>
+        <ul>
+            <li>Pré-Treino/Mundoboost - R$108,00 (R$108,00 x 1 unidade)</li>
+            <li>Creatina/Illaoi's Impact - R$99,90 (R$99,90 x 1 unidade)</li>
+        </ul>
+    </div>
+
+    <div class="shipping">
+        <h2>Informações de Entrega</h2>
+        <p>Prazo de entrega: 15 dias úteis</p>
+        <h3>Calcular Frete</h3>
+        <form id="shipping-form">
+            <label for="cep">Digite seu CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="Ex: 12345-678">
+            <button type="button" id="calculate-button">Calcular</button>
+        </form>
+        <p id="shipping-cost">Valor do frete estimado: R$XX,XX</p>
+    </div>
+
+    <div class="total">
+        <h2>Total</h2>
+        <p>Total dos produtos: R$207,90</p>
+        <p>Frete: R$XX,XX</p>
+        <p><strong>Total a pagar: R$XX,XX</strong></p>
+    </div>
+
+    <hr>
+    <button type="submit">Finalizar compra</button>
+    <button onclick="window.location.href='nota_fiscal.pdf'" class="emitir-nota-btn">Emitir Nota Fiscal</button>
+
+   
+
+    <div class="contact-info">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:contato@nerdfit.com">contato@nerdfit.com</a></p>
+    </div>
+
+    <div class="social-media">
+        <h2>Redes Sociais</h2>
+        <p><a href="https://www.facebook.com/NerdFit" target="_blank">Facebook</a></p>
+        <p><a href="https://www.instagram.com/NerdFit" target="_blank">Instagram</a></p>
+        <p><a href="https://www.twitter.com/NerdFit" target="_blank">Twitter</a></p>
+    </div>
+
+    <div class="policy">
+        <h2>Política de Reembolso e Devolução</h2>
+        <p>A NerdFit se compromete com a satisfação total de seus clientes. Oferecemos uma política de reembolso e devolução completa para produtos devolvidos em até 30 dias após a compra, desde que os produtos estejam intactos e na embalagem original.</p>
+        <p>Para iniciar uma devolução, por favor, entre em contato através do email <a href="mailto:devolucoes@nerdfit.com">devolucoes@nerdfit.com</a> com o número do pedido e detalhes do produto.</p>
+    </div>
+
+    <script>
+        document.getElementById('calculate-button').addEventListener('click', function() {
+            var cep = document.getElementById('cep').value;
+            // Simulação do cálculo do frete
+            var shippingCost = 10.00; // Valor simulado do frete
+            document.getElementById('shipping-cost').innerText = 'Valor do frete estimado: R$' + shippingCost.toFixed(2);
+        });
+        
+    </script>
+     <footer>
+        <p>&copy; 2024 NerdFit - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+

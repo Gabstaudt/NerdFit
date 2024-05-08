@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Fiscais - Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Notas Fiscais - Admin</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pedido</th>
+                    <th>Cliente</th>
+                    <th>Valor</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Cliente A</td>
+                    <td>R$ 150,00</td>
+                    <td>Pago</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Cliente B</td>
+                    <td>R$ 200,00</td>
+                    <td>Pendente</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Cliente C</td>
+                    <td>R$ 100,00</td>
+                    <td>Pendente</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="window.location.href='nota_fiscal.pdf'" class="emitir-nota-btn">Emitir Nota Fiscal</button>
+        <button onclick="window.location.href='estoque.html'" class="emitir-nota-btn">Adicionar estoque</button>
+    </div>
+</body>
+</html>

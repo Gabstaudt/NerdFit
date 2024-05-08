@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+    <link rel="stylesheet" type="text/css" href="estoque.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Estoque</h1>
+    </header>
+
+    <div class="add-product">
+        <h2>Adicionar Produto</h2>
+        <form id="product-form">
+            <label for="product-name">Nome do Produto:</label>
+            <input type="text" id="product-name" name="product-name" required>
+            <label for="product-quantity">Quantidade:</label>
+            <input type="number" id="product-quantity" name="product-quantity" min="1" required>
+            <button type="submit">Adicionar Produto</button>
+        </form>
+    </div>
+
+    <div class="product-list">
+        <h2>Lista de Produtos</h2>
+        <ul id="product-list">
+            <!-- Aqui serão listados os produtos adicionados dinamicamente -->
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Empresa XYZ - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('product-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var productName = document.getElementById('product-name').value;
+            var productQuantity = document.getElementById('product-quantity').value;
+            addProductToList(productName, productQuantity);
+            document.getElementById('product-form').reset();
+        });
+
+        function addProductToList(name, quantity) {
+            var productList = document.getElementById('product-list');
+            var listItem = document.createElement('li');
+            listItem.textContent = name + ' - Quantidade: ' + quantity;
+            productList.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>

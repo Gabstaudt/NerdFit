@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #ffffff; /* Fundo branco */
+    color: #6b8e23; /* Verde */
+}
+/* Estilos para os botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #228b22; /* Verde */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.frete-gratis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #228b22;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px; /* Adiciona uma margem à esquerda para espaçamento */
+    margin-right: 10px; /* Adiciona uma margem à direita para espaçamento */
+}
+
+/* Remova a margem esquerda do primeiro círculo */
+.circulo:first-child {
+    margin-left: 0;
+}
+
+/* Ajusta a margem direita do último círculo para manter o espaçamento igual */
+.circulo:last-child {
+    margin-right: 0;
+}
+
+.circulo p {
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2e8b57; /* Verde mais escuro */
+}
+
+
+h1, h2 {
+    color: #9932cc; /* Roxo */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #9932cc, #228b22), url('bannernerdfit.png'); /* Gradiente + imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0; /* Aumenta o espaço acima e abaixo da imagem */
+    position: relative;
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilos para o conteúdo do cabeçalho */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para os botões de login e cadastro */
+.login-cadastro {
+    margin-right: 20px;
+}
+.circulo a {
+    text-decoration: none;
+    color: #fff; /* Cor do ícone */
+    font-size: 20px; /* da palavra
+     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Garante que o ícone fique centralizado verticalmente */
+}
+
+.circulo a span {
+    color: #fff; /* Cor do texto "Carrinho de Compra" */
+}
+
+
+
+
+/* Estilo para a barra de pesquisa */
+.form-group {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px; /* Ajuste para mover a barra de pesquisa para a esquerda */
+}
+
+.form-group input[type="text"] {
+    width: calc(100% - 100px); /* Reduz a largura da barra de pesquisa para acomodar os botões */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group label {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Estilos para os botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #228b22; /* Verde */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2e8b57; /* Verde mais escuro */
+}
+
+.contact-info, .social-media, .policy {
+    margin-bottom: 20px;
+}
+/* Estilos para a linha lateral */
+.linha-lateral {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.linha-lateral::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px; /* Distância da borda esquerda */
+    width: 4px; /* Largura da linha */
+    height: 100%; /* Altura da linha */
+    background-color: #6b8e23; /* Cor da linha */
+}
+
+/* Etítulo "Nossos Produtos" */
+.titulo-produtos {
+    color: #9932cc; /* Roxo */
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-left: 10px; /* Espaçamento à esquerda para alinhar com a linha */
+}
+
+
+a {
+    color: #228b22; /* Verde */
+}
+
+.produto {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    background-color: #ffffff; /* Fundo branco */
+}
+
+.preco {
+    color: #228b22; /* Verde */
+    font-weight: bold;
+}
+
+.preco-com-desconto {
+    color: #228b22; /* Verde */
+    font-weight: bold;
+}
+
+.descricao {
+    color: #9932cc; /* Roxo */
+}
+
+/* barra de pesquisa */
+.form-group {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group label {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/*  cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* produtos */
+.produto {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.produto h2 {
+    color: #9932cc; /* Roxo */
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/*  links de contato e redes sociais */
+.contact-info a, .social-media a {
+    color: #228b22; /* Verde */
+}
+
+
+.policy {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.policy h2 {
+    color: #9932cc; /* Roxo */
+}
+/* rodapé */
+footer {
+    background-color: #f2f2f2; /* Cor de fundo do rodapé */
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #555; /* Cor do texto do rodapé */
+    font-size: 14px;
+}

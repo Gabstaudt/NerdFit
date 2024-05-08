@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #fff; /* Branco */
+}
+
+h1, h2 {
+    color: #333; /* Cor padrão */
+}
+
+.contact-info, .social-media, .policy {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #000406; /* Azul padrão */
+}
+
+
+    header img {
+        width: 1400px; 
+        height: 400px; 
+        max-width: 100%; 
+        max-height: 100%;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="radio"], label {
+    color: #333; /* Cor padrão */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.contact-info a, .social-media a, .policy a {
+    color: #0077cc; 
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - NerdFit</title>
+    <link rel="stylesheet" type="text/css" href="suporte.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Chat de Suporte</h2>
+            <button class="close-button" onclick="closeSupportChat()">Fechar</button>
+        </div>
+        <div class="chat-messages">
+            <!-- Aqui serão exibidas as mensagens do chat -->
+            <div class="message received">
+                <p>Oi! Como podemos ajudar você hoje?</p>
+            </div>
+            <div class="message sent">
+                <p>Estou com um problema com o meu pedido...</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    
+    <script src="suporte.js"></script>
+   
+</body>
+</html>

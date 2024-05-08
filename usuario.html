@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta</title>
+    <link rel="stylesheet" href="usuario.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile-picture">
+            <img src="mulherfoto.webp" alt="Foto de Perfil">
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="account-section">
+            <h1>Minha Conta</h1>
+            <div class="buttons">
+                <button id="btn-rastrear">Rastrear Encomendas</button>
+                <button id="btn-devolucao">Devolução</button>
+                <button id="btn-acompanhar">Acompanhar Devolução</button>
+                <button id="btn-novo-pedido">Novo Pedido</button>
+            </div>
+        </div>
+
+        <div class="tracking-modal" id="tracking-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Rastreamento de Pedido</h2>
+                <p>Rastreio pelo site dos correios pelo código: BRS09320BR </p>
+            </div>
+        </div>
+
+        <div class="return-modal" id="return-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Devolução</h2>
+                <p>Entre em contato conosco pelos nossos canais de atendimento</p>
+            </div>
+        </div>
+
+        <div class="tracking-info" id="tracking-info">
+            <span class="close">&times;</span>
+            <h2>Encomendas</h2>
+            <ul>
+                <li>Encomenda 1</li>
+                <li>Encomenda 2</li>
+                <li>Encomenda 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="usuario.js"></script>
+</body>
+</html>

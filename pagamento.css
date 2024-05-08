@@ -1,0 +1,110 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* Fundo claro */
+    color: #333; /* Cor do texto padrão */
+}
+
+header img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+h1, h2 {
+    color: #333; /* Cor padrão */
+}
+
+a {
+    color: #0077cc; /* Cor dos links */
+}
+
+
+/* Estilos para os produtos */
+.product {
+    margin-bottom: 20px;
+}
+
+.product h2 {
+    color: #9932cc; /* Roxo */
+}
+
+.product ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para calcular frete */
+.shipping {
+    margin-bottom: 20px;
+}
+
+.shipping h2 {
+    color: #9932cc; /* Roxo */
+}
+
+.shipping form {
+    margin-bottom: 10px;
+}
+
+.shipping label {
+    display: block;
+    margin-bottom: 5px;
+}
+.emitir-nota-btn {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 10px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar por cima */
+    text-decoration: none; /* Sem sublinhado */
+}
+
+.emitir-nota-btn:hover {
+    background-color: #45a049; /* Mudança de cor ao passar o mouse */
+}
+
+
+.shipping input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para botões */
+button[type="submit"] {
+    background-color: #9932cc; /* Roxo */
+    color: #ffffff; /* Branco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #6b8e23; /* Verde */
+}
+
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #228b22; /* Verde */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #f5f5f5; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    padding: 20px;
+    text-align: center;
+}
+

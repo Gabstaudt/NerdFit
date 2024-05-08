@@ -1,0 +1,19 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtém referência para o botão de suporte
+    var supportBtn = document.getElementById('support-btn');
+
+    // Obtém referência para o elemento de chat
+    var chatWidget = document.getElementById('chat-widget');
+
+    // Adiciona um ouvinte de evento para o clique no botão
+    supportBtn.addEventListener('click', function() {
+        // Verifica se o chat está atualmente visível
+        if (chatWidget.style.display === 'none' || chatWidget.style.display === '') {
+            // Se estiver oculto, exibe o chat
+            chatWidget.style.display = 'block';
+        } else {
+            // Se estiver visível, oculta o chat
+            chatWidget.style.display = 'none';
+        }
+    });
+});
